@@ -85,7 +85,7 @@ TEST(ParserTest, GarbagePacket) {
 // unknown package
 TEST(ParserTest, UnknownPacket) {
     SimpleParser sp;
-    std::vector<uint8_t> input_data = { 0x53, 0x01, 0x07, 0x00, 0x02, 0x88, 0x43 };
+    std::vector<uint8_t> input_data = { 0x53, 0x01, 0x07, 0x00, 0x02, 0x61, 0x44 };
 
     for (auto b : input_data)
     {
